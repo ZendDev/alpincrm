@@ -12,6 +12,8 @@
   "dependencies": {
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "vue": "^2.5.11",
+    "vue-dialog-drag": "^0.1.29",
+    "vue-js-modal": "^2.0.0-rc.6",
     "vue-router": "^3.4.3",
     "vuedraggable": "^2.24.1"
   },

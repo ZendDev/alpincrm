@@ -16,7 +16,7 @@
           <span>New Lead</span>
         </div>
         <draggable class="kanban-list" :list="arrLead" group="tasks">
-          <div class="kanban-item" v-for="lead in arrLead" :key="lead.name">
+          <div class="kanban-item" @click="kanbandata(lead)" v-for="lead in arrLead" :key="lead.name">
             <div class="kanban-col">
               <label>Name:</label> 
               <span>{{ lead.name }}</span>
@@ -144,6 +144,7 @@
           </div>
         </draggable>
       </div>
+      <Modal name="modal" :draggable='true'>{{ leadname }}</Modal>
     </Index>
 </template>
 
@@ -157,6 +158,7 @@ export default {
   },
   data() {
     return{
+      leadname: '',
       newLead: "",
       arrLead: [
         {
@@ -216,11 +218,19 @@ export default {
         this.arrLead.push({name: this.newLead})
         this.newLead="";
       }
+    },
+    kanbandata(lead) {
+      this.leadname = lead.name
+      this.leadcategory = lead.category
+      this.leadCode = lead.countrtyCode
+      this.leadphone = lead.phoneNumber
+      this.$modal.show('modal');
     }
+  },
+  mounted () {
   }
 }
 </script>
 
 <style>
-
 </style>
