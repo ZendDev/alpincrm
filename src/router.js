@@ -13,6 +13,7 @@ export default new Router({
         component: page('B2C/Index.vue'),
         children: [
             { path: '', redirect: { name: 'b2c.funnel.leads' }},
+            { path: '/b2c', redirect: { name: 'b2c.funnel.leads' }},
             { path: 'b2c/funnel/leads', name: 'b2c.funnel.leads', component: page('B2C/Funnel/Leads.vue') },
         ] },
     ]

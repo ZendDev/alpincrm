@@ -1,0 +1,181 @@
+.navbar{
+    width: 115px;
+    height: 100vh;
+    border-right: 1px solid #FFF;
+    box-sizing: border-box;
+    padding: 0 12px;  
+    padding-top: 3.4vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        flex: 1;            
+    }
+}
+
+.mainmenu{
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        background: #4F5050;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        outline: none;  
+        &.router-link-active{
+            background: #FFFFFF;
+            color:#4F5050;
+        }      
+    }
+    &__item{
+        margin-bottom:10px;
+    }
+}
+
+.navigation{
+    margin-top: 5.7vh !important;
+    &__link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin: auto;   
+        text-decoration: none; 
+        outline:none;  
+        &.router-link-active{
+            background-color: #F5F5F5;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            span{
+                color:#4F5050;
+            }
+            & .icon-funnel{
+                background: url(~/src/assets/images/navbar/funnel-active.svg) no-repeat;
+                width:25px;
+                height: 20px;               
+            }
+            & .icon-support{
+                background: url(~/src/assets/images/navbar/support-active.svg) no-repeat;
+                width: 23px;
+                height: 24px;              
+            }
+            & .icon-mail{
+                background: url(~/src/assets/images/navbar/mail-active.svg) no-repeat;
+                width: 23px;
+                height: 21px;             
+            }
+            & .icon-invoice{
+                background: url(~/src/assets/images/navbar/invoice-active.svg) no-repeat;
+                width: 18px;
+                height: 24px;               
+            }
+            & .icon-documents{
+                background: url(~/src/assets/images/navbar/documents-active.svg) no-repeat;
+                width: 21px;
+                height: 23px;              
+            }
+            & .icon-dedalers{
+                background: url(~/src/assets/images/navbar/dedalers-active.svg) no-repeat;
+                width: 23px;
+                height: 23px;                
+            }
+            & .icon-catalog{
+                background: url(~/src/assets/images/navbar/catalog-active.svg) no-repeat;
+                width: 22px;
+                height: 24px;                
+            }
+            & .icon-analytics{
+                background: url(~/src/assets/images/navbar/analytics-active.svg) no-repeat;
+                width: 24px;
+                height: 21px;              
+            }
+        }  
+    }
+    &__name{
+        display: block;
+        font-size: 10px;
+        color: #FFF;
+        letter-spacing: 1px;
+        font-weight: 900;
+        line-height: 1;
+        margin-top:9px;     
+    }
+    &__icon{
+        height:20px;
+        margin-bottom:8px;
+    }
+    &__item{
+        margin-bottom: 10px;
+    }
+}
+
+.icon{
+    display: block;
+    &-funnel{
+        background: url(~/src/assets/images/navbar/funnel.svg) no-repeat;
+        width:25px;
+        height: 20px;
+    }
+    &-analytics{
+        background: url(~/src/assets/images/navbar/analytics.svg) no-repeat;
+        width: 24px;
+        height: 21px;
+    }
+    &-catalog{
+        background: url(~/src/assets/images/navbar/catalog.svg) no-repeat;
+        width: 22px;
+        height: 24px;
+    }
+    &-dealers{
+        background: url(~/src/assets/images/navbar/dealers.svg) no-repeat;
+        width: 23px;
+        height: 23px;
+    }
+    &-documents{
+        background: url(~/src/assets/images/navbar/documents.svg) no-repeat;
+        width: 21px;
+        height: 23px;
+    }
+    &-mail{
+        background: url(~/src/assets/images/navbar/mail.svg) no-repeat;
+        width: 23px;
+        height: 21px;
+    }
+    &-invoice{
+        background: url(~/src/assets/images/navbar/invoice.svg) no-repeat;
+        width: 18px;
+        height: 24px;
+    }
+    &-support{
+        background: url(~/src/assets/images/navbar/support.svg) no-repeat;
+        width: 23px;
+        height: 24px;
+    }
+    &-settings{
+        background: url(~/src/assets/images/navbar/settings.svg) no-repeat;
+        width: 24px;
+        height: 24px;       
+    }
+}
+
+.navsettings{
+    width: 60px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;    
+}
