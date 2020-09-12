@@ -1,10 +1,13 @@
 <template>
-  <div>Leads</div>
+    <Index>
+      
+    </Index>
 </template>
 
 <script>
+import Index from "~/pages/B2C/Funnel/Index.vue"
 export default {
-  name: 'leads'
+  components: {Index}
 }
 </script>
 
