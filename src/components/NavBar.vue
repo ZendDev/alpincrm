@@ -31,22 +31,13 @@
  
 <script>
 export default {
-  data: () => ({
-    menus: [
-        {name: "Funnel", link: "funnel", icon: "funnel", id: "1"},
-        {name: "Dealers", link: "dealers", icon: "dealers", id: "2"},
-        {name: "Catalog", link: "catalog", icon: "catalog", id: "3"},
-        {name: "Documents", link: "documents", icon: "documents", id: "4"},
-        {name: "Mail", link: "mail", icon: "mail", id: "5"},
-        {name: "Invoices", link: "invoices", icon: "invoice", id: "6"},
-        {name: "Support", link: "support", icon: "support", id: "7"},
-        {name: "Analytics", link: "analytics", icon: "analytics", id: "8"}
-    ],
-    navigations: [
-        {name: "B2C", link: "b2c", id: "1"},
-        {name: "Tourists", link: "tourists", id: "2"}
-    ]
-  }),
+    props: ['menus'],
+    data: () => ({
+        navigations: [
+            {name: "B2C", link: "b2c", id: "1"},
+            {name: "Tourists", link: "tourists", id: "2"}
+        ]
+    }),
 }
 </script>
 

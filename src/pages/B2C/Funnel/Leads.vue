@@ -1,6 +1,20 @@
 <template>
     <Index>
-      
+      <div class="kanban-column">
+        Hello
+      </div>
+      <div class="kanban-column">
+        Hello
+      </div>
+      <div class="kanban-column">
+        Hello
+      </div>
+      <div class="kanban-column">
+        Hello
+      </div>
+      <div class="kanban-column">
+        Hello
+      </div>
     </Index>
 </template>
 

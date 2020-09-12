@@ -1,0 +1,26 @@
+.secondmenu{
+    width: 100px;
+    margin-top: 8vh;
+    &__link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        text-decoration: none;
+        outline: none;        
+    }
+    &__name{
+        display: block;
+        font-size: 10px;
+        font-weight: 900;
+        color: #FFF;
+        letter-spacing: 1px;
+        margin-top:7px;        
+    }
+    &__item{
+        margin-top:10px;
+    }
+}

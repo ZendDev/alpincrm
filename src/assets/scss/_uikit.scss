@@ -1,0 +1,68 @@
+.icon{
+    display: block;
+    &-funnel{
+        background: url(~/src/assets/images/navbar/funnel.svg) no-repeat;
+        width:25px;
+        height: 20px;
+    }
+    &-analytics{
+        background: url(~/src/assets/images/navbar/analytics.svg) no-repeat;
+        width: 24px;
+        height: 21px;
+    }
+    &-catalog{
+        background: url(~/src/assets/images/navbar/catalog.svg) no-repeat;
+        width: 22px;
+        height: 24px;
+    }
+    &-dealers{
+        background: url(~/src/assets/images/navbar/dealers.svg) no-repeat;
+        width: 23px;
+        height: 23px;
+    }
+    &-documents{
+        background: url(~/src/assets/images/navbar/documents.svg) no-repeat;
+        width: 21px;
+        height: 23px;
+    }
+    &-mail{
+        background: url(~/src/assets/images/navbar/mail.svg) no-repeat;
+        width: 23px;
+        height: 21px;
+    }
+    &-invoice{
+        background: url(~/src/assets/images/navbar/invoice.svg) no-repeat;
+        width: 18px;
+        height: 24px;
+    }
+    &-support{
+        background: url(~/src/assets/images/navbar/support.svg) no-repeat;
+        width: 23px;
+        height: 24px;
+    }
+    &-settings{
+        background: url(~/src/assets/images/navbar/settings.svg) no-repeat;
+        width: 24px;
+        height: 24px;       
+    }
+    &-notes{
+        background: url(~/src/assets/images/submenu/notes.svg) no-repeat;
+        width:24px;
+        height:24px;
+    }
+    &-tutorial{
+        background: url(~/src/assets/images/submenu/tutorial.svg) no-repeat;
+        width:24px;
+        height:24px;
+    }
+    &-scripts{
+        background: url(~/src/assets/images/submenu/scripts.svg) no-repeat;
+        width:24px;
+        height:24px;
+    }
+    &-log{
+        background: url(~/src/assets/images/submenu/log.svg) no-repeat;
+        width: 36px;
+        height: 18px;
+    }
+}

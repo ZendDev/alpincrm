@@ -1,7 +1,9 @@
 <template>
     <div class="wrapper">
         <Submenu :submenus="submenus"/>
-        <slot />
+        <div class="kanban">
+            <slot />
+        </div>
     </div>
 </template>
 
