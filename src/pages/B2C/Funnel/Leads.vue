@@ -144,7 +144,60 @@
           </div>
         </draggable>
       </div>
-      <Modal name="modal" :draggable='true'>{{ leadname }}</Modal>
+      <Modal class="kanban-lead" name="modal" :draggable='true' :width="300" :height="380">
+        <div class="lead">
+          <div class="lead__title">
+            <div class="lead__close" />
+            <span>Lead</span>
+          </div>
+          <div class="lead__content">
+            <span class="lead__name">{{ leadname }}</span>
+            <ul class="lead__control">
+              <li>
+                <img src="/src/assets/images/notification.svg" alt="notification">
+              </li>
+              <li>
+                <img src="/src/assets/images/mail.svg" alt="notification">
+              </li>
+              <li>
+                <img src="/src/assets/images/sms.svg" alt="notification">
+              </li>
+              <li>
+                <img src="/src/assets/images/phone.svg" alt="notification">
+              </li>
+              <li>
+                <img src="/src/assets/images/whatsapp.svg" alt="notification">
+              </li>
+              <li>
+                <img src="/src/assets/images/telegram.svg" alt="notification">
+              </li>
+            </ul>
+            <ul class="lead__info">
+              <li>
+                <label>Contact time:</label>
+                <span>from 15:00 to 18:00</span>
+              </li>
+              <li>
+                <label>Interface lang:</label>
+                <span>{{ leadlang }}</span>
+              </li>
+              <li>
+                <label>Sourse:</label>
+                <span>{{ leadsourse }}</span>
+              </li>
+              <li>
+                <label>Geolocation:</label>
+                <span>{{ leadgeolocation }}</span>
+              </li>
+            </ul>
+            <div class="lead__btn">
+              <div class="btn btn__orange">Remarketing</div>
+              <div class="btn btn__blue">Temporary dealer</div>
+              <div class="btn btn__blueb">Delete</div>
+            </div>
+          </div>
+        </div>
+      </Modal>
     </Index>
 </template>
 
@@ -159,6 +212,13 @@ export default {
   data() {
     return{
       leadname: '',
+      leadname: '',
+      leadcategory: '', 
+      leadCode: '',
+      leadphone: '',
+      leadsourse: '',
+      leadlang: '',
+      leadgeolocation: '',
       newLead: "",
       arrLead: [
         {
@@ -224,6 +284,9 @@ export default {
       this.leadcategory = lead.category
       this.leadCode = lead.countrtyCode
       this.leadphone = lead.phoneNumber
+      this.leadsourse = lead.source
+      this.leadlang = lead.lang
+      this.leadgeolocation = lead.geolocation
       this.$modal.show('modal');
     }
   },

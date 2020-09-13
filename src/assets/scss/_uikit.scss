@@ -66,3 +66,25 @@
         height: 18px;
     }
 }
+
+.btn{
+    border-radius: 4px;
+    cursor: pointer;
+    color: #FFFFFF;
+    letter-spacing: 0.8px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:36px;
+    &__orange{
+        background: #FFA132;
+    }    
+    &__blue{
+        background: #34C4F1;        
+    }
+    &__blueb{
+        background: #007AFF;        
+    }
+}
